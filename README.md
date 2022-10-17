@@ -16,6 +16,7 @@ Install this script - K8sInstall.sh - in ubuntu's home directory, then run it as
 
 If all does well, you'll see the suggestion to bring up the control node via  -
 
+---
 Your Kubernetes control-plane has initialized successfully!
 
 To start using your cluster, you need to run the following as a regular user:
@@ -34,10 +35,10 @@ Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
 
 Then you can join any number of worker nodes by running the following on each as root:
 
-``` shell
 kubeadm join 172.31.77.40:6443 --token az66cl.ioresgghjzil3hr2 \
 	--discovery-token-ca-cert-hash sha256:580fecefda536d44c05859763e3264d1eb28666a1f1772493dc66c1cbd239f3f 
-```
+
+---
 
 Verify that the master node is running.
 
